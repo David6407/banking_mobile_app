@@ -1,5 +1,7 @@
 import { useState } from "react";
+import Login from "./src/screens/Login";
 import Splash from "./src/screens/Splash";
+import Register from "./src/screens/Register";
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -7,4 +9,7 @@ export default function App() {
   if(showSplash){
   return <Splash onFinish={() => setShowSplash(false)} />
   }
+  return <Login />;
 }
+
+  

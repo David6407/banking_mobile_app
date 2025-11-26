@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import { StyleSheet, View, Image } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 
 const Splash = ({onFinish}: {onFinish:() => void}) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             onFinish();
-        }, 5000);
+        }, 1000);
         return () => clearTimeout(timer);
     }, [onFinish]);
     
